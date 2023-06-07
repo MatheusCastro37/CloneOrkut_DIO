@@ -3,27 +3,45 @@
 }
 
 .container{
-    width: 80%;
-    height: 70vh;
+    width: 80vw;
+    height: 80vh;
     background-color: #FFFFFF;
-    border-radius: 5%;
-    margin: auto;
-    margin-top: 5%;
+    border-radius: 25px;
+    margin: 2em;
 
     border: 1px solid blue;
 }
 
 .fields{
-    margin: 5% 10%;
+    margin: 1em;
+    max-width: 458px;
 }
 
 .pink-font{
     color: #E8258E;
 }
 
+.fields__title{
+    display: flex;
+    justify-content: center;
+}
+
 #field__title{
     font-size: 18px;
     font-weight: bold;
     color: rgb(77, 77, 77);
-    margin-bottom: 5%;
+    margin: 0.8em;
+}
+
+.fields__textboxs{
+    display: flex;
+    flex-direction: column;
+}
+
+#field__email,
+#field__pass{
+    padding: 0.50em;
+    margin: 0.25em 0;
+    border-radius: 18px;
+    border: 1px solid #5555555d;
 }
