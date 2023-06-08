@@ -12,9 +12,19 @@
     border: 1px solid blue;
 }*/
 
-.fields{
-    margin: 1em;
+.logo_img{
+    width: 100vw;
+    padding: 1em;
+    margin: 2em 0;
     max-width: 458px;
+}
+
+.fields {
+    margin: 0.5em;
+    padding: 1em;
+    max-width: 458px;
+    border: 1px solid grey;
+    border-radius: 20px;
 }
 
 .pink-font{
