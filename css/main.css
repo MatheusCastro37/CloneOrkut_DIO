@@ -23,17 +23,18 @@
     margin: 0.5em;
     padding: 1em;
     max-width: 458px;
-    border: 1px solid grey;
+    border: transparent;
     border-radius: 20px;
-    box-shadow: 0px 7px 50px -20px #E8258E;
-    -webkit-box-shadow: 0px 7px 50px -20px #E8258E;
+    box-shadow: 0px 7px 50px -20px #53223c;
+    -webkit-box-shadow: 0px 7px 50px -20px #53223c;
 }
 
 .pink-font{
     color: #E8258E;
 }
 
-.fields__title{
+.fields__title,
+.fields__create{
     display: flex;
     justify-content: center;
 }
@@ -84,8 +85,43 @@
 }
 
 .fields__create > a{
+    margin: 2.5em 0 1em 0;
+    font-weight: 600;
+}
+
+a > img{
+    width: 35px;
+    height: 35px;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    max-width: 458px;
+}
+
+.appleStore,
+.googlePlay{
     display: flex;
     justify-content: center;
-    margin: 3em 0 1em 0;
-    font-weight: 600;
+    max-width: 458px;
+    width: 200px;
+    border-radius: 50px;
+    margin: 0.7em 0;
+    padding: 5px 0;
+    border: transparent;
+    box-shadow: 0px 0px 30px -10px #53223c;
+    -webkit-box-shadow: 0px 0px 30px -10px #53223c;
+    align-items: center;
+}
+
+div p{
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+div span{
+    font-size: 18px;
 }
