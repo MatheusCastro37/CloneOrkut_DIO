@@ -2,7 +2,7 @@
     background-color: #FFF9FE;
 }
 
-.container{
+/*.container{
     width: 80vw;
     height: 80vh;
     background-color: #FFFFFF;
@@ -10,7 +10,7 @@
     margin: 2em;
 
     border: 1px solid blue;
-}
+}*/
 
 .fields{
     margin: 1em;
@@ -44,4 +44,21 @@
     margin: 0.25em 0;
     border-radius: 18px;
     border: 1px solid #5555555d;
+}
+
+.fields__remember{
+    margin: 0.3em 1em;
+    font-size: 17px;
+}
+
+#btnlogin{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #FFF;
+    background-color: #E8258E;
 }
