@@ -22,6 +22,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 700px;
 }
 
 .logo_img{
@@ -36,9 +39,10 @@
     display: none;
 }
 
-.fields {
+.fields{
     margin: 0.5em;
     padding: 1em;
+    width: 95vw;
     max-width: 458px;
     border: transparent;
     border-radius: 20px;
@@ -54,6 +58,7 @@
 .fields__create{
     display: flex;
     justify-content: center;
+    align-items: baseline;
 }
 
 #field__title{
@@ -82,6 +87,12 @@
     font-weight: 400;
 }
 
+#field__remember:hover,
+label:hover,
+#btnlogin{
+    cursor: pointer;
+}
+
 #btnlogin{
     display: flex;
     justify-content: center;
@@ -94,16 +105,29 @@
     background-color: #E8258E;
 }
 
-.fields__recovery > a{
+.fields__recovery{
     display: flex;
-    margin: 0.5em 1em;
     justify-content: flex-end;
+}
+
+.fields__recovery > a{
+    margin: 0.5em 1em;
     color: rgb(65, 64, 64);
 }
 
-.fields__create > a{
+.fields__recovery > a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(65, 64, 64);
+}
+
+.fields__create{
     margin: 2.5em 0 1em 0;
     font-weight: 600;
+}
+
+.link > a:hover{
+    text-decoration: underline;
+    text-decoration-color: #E8258E;
 }
 
 a > img{
@@ -121,17 +145,27 @@ a > img{
 
 .appleStore,
 .googlePlay{
-    display: flex;
-    justify-content: center;
-    max-width: 458px;
-    width: 200px;
-    border-radius: 50px;
     margin: 0.7em 0;
     padding: 5px 0;
+    border-radius: 50px;
     border: transparent;
     box-shadow: 0px 0px 30px -10px #53223c;
     -webkit-box-shadow: 0px 0px 30px -10px #53223c;
     align-items: center;
+}
+
+.appleStore > a,
+.googlePlay > a{
+    display: flex;
+    justify-content: center;
+    max-width: 458px;
+    width: 200px;
+    padding: 0.3em;
+}
+
+.appleStore,
+.googlePlay{
+    cursor: pointer;
 }
 
 div p{
@@ -139,6 +173,29 @@ div p{
     margin-left: 15px;
 }
 
-div span{
+div span,
+.link{
     font-size: 18px;
+}
+
+@media screen and (min-width: 375px){
+    .fields__remember{
+        margin-left: 1.6em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        display: flex;
+        max-width: 1020px;
+    }
+
+    .download{
+        flex-direction: row;
+    }
+
+    .appleStore,
+    .googlePlay{
+        margin: 0.7em;
+    }
 }
